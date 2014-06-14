@@ -131,12 +131,12 @@
         
         for ( int count = 0 ;count < [response.mapItems count];count++)
         {
-            [self.searchDisplayController setActive:NO animated:YES];
+            //[self.searchDisplayController setActive:NO animated:YES];
             MKMapItem *item = results.mapItems[count];
-            [self.ibMapView addAnnotation:item.placemark];
-            [self.ibMapView selectAnnotation:item.placemark animated:YES];
+            //[self.ibMapView addAnnotation:item.name];
+            //[self.ibMapView selectAnnotation:item.placemark animated:YES];
             
-            [self.ibMapView setCenterCoordinate:item.placemark.location.coordinate animated:YES];
+            //[self.ibMapView setCenterCoordinate:item.placemark.location.coordinate animated:YES];
             
             [self.ibMapView setUserTrackingMode:MKUserTrackingModeNone];
             
@@ -192,7 +192,7 @@
             [self.ibMapView selectAnnotation:item.placemark animated:YES];
             
             [self.ibMapView setCenterCoordinate:item.placemark.location.coordinate animated:YES];
-            
+            //[self.ibMapView addAnnotations:results];
             [self.ibMapView setUserTrackingMode:MKUserTrackingModeNone];
 
             
