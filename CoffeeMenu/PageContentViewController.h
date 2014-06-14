@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PageContentViewController : UIViewController
+@interface PageContentViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UIButton *IntoFBButton;

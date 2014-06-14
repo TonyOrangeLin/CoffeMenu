@@ -7,6 +7,8 @@
 //
 
 #import "PageContentViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
+
 
 @interface PageContentViewController ()
 
@@ -38,6 +40,35 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)shareOGStoryWithShareDialog:(id)sender
+{
+    if([FBDialogs canPresentShareDialogWithPhotos]) {
+        NSLog(@"canPresent");
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+    [imagePicker setDelegate:self];
+    [self presentViewController:imagePicker animated:YES completion:nil];
+    }
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    UIImage *img = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    FBPhotoParams *params = [[FBPhotoParams alloc] init];
+    params.photos = @[img];
+    
+    [FBDialogs presentShareDialogWithPhotoParams:params
+                                     clientState:nil
+                                         handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
+                                             if (error) {
+                                                 NSLog(@"Error: %@", error.description);
+                                             } else {
+                                                 NSLog(@"Success!");
+                                             }
+                                         }];
+    
 }
 
 @end
