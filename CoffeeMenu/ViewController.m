@@ -16,25 +16,57 @@
 
 - (void)viewDidLoad
 {
+    //@"Latte"
+    //, @"Mocha"
+    //, @"Cappuccino"
+    //, @"Espresso Con Panna"
+    //, @"Espresso Macchiato"
+    //, @"Americano"
+    //, @"Caramel Macchiato"
+    //
     [super viewDidLoad];
 	// Create the data model
     _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
     _pageImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png"];
     if([_coffeeString isEqualToString:@"0"])
     {
-        _pageTitles = @[@"準備兩份濃縮咖啡", @"將鮮奶加入濃縮咖啡",@"將牛奶打發", @"倒入咖啡上層", @"完成了"];
-        _pageImages = @[@"espresso.png", @"milk.png", @"milk foam.png", @"pourfoam.png",@"Latte.png"];
+        _pageTitles = @[@"準備一份濃縮咖啡", @"將鮮奶加入濃縮咖啡", @"完成了"];
+        _pageImages = @[@"espresso.png", @"pour milk.png",@"Latte.png"];
     }
     else if([_coffeeString isEqualToString:@"1"])
     {
         
-         _pageTitles = @[@"mocha", @"mocha", @"mocha"];
-        _pageImages = @[ @"page2.png", @"page3.png", @"page4.png"];
+         _pageTitles = @[@"準備一份濃縮咖啡", @"將鮮奶加入濃縮咖啡", @"加入巧克力糖漿",@"將發泡鮮奶油倒在濃縮咖啡上", @"完成了!!!"];
+        _pageImages = @[ @"espresso.png", @"pour milk.png",@"chocolatesyrup.png", @"WhippedCream.png",@"Mocha.png"];
     }
     else if([_coffeeString isEqualToString:@"2"])
     {
-         _pageTitles = @[@"cap", @"cap", @"cap", @"cap", @"cap"];
-        _pageImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png",@"page4.png"];
+         _pageTitles = @[@"準備一份濃縮咖啡", @"將鮮奶加入濃縮咖啡",@"將牛奶打發", @"倒入咖啡上層", @"完成了"];
+        _pageImages = @[@"espresso.png", @"pour milk.png", @"milk foam.png", @"pourfoam.png",@"Cappuccino.png"];
+    }
+    
+    else if([_coffeeString isEqualToString:@"3"])//espresso con panna
+    {
+        _pageTitles = @[@"準備一份濃縮咖啡",@"將發泡鮮奶油倒在濃縮咖啡上",@"加入焦糖醬", @"完成了"];
+        _pageImages = @[@"espresso.png", @"WhippedCream.png", @"camerel sauce.png",@"Espresso Con Panna.png"];
+        
+    }
+    else if([_coffeeString isEqualToString:@"4"])//espresso macchiato
+    {
+        _pageTitles = @[@"準備一份濃縮咖啡",  @"將牛奶打發倒入咖啡上層", @"完成了"];
+        _pageImages = @[@"espresso.png", @"pourfoam.png",@"Espresso Macchiato.png"];
+        
+    }
+    else if([_coffeeString isEqualToString:@"5"])//Americano
+    {
+        _pageTitles =@[@"準備一份濃縮咖啡", @"用水將杯子裝滿", @"完成了"];
+        _pageImages = @[@"espresso.png", @"waterpour.png", @"Americano.png"];
+    }
+    else if([_coffeeString isEqualToString:@"6"])//caramel macchiato
+    {
+        _pageTitles = @[@"準備一份濃縮咖啡",@"加入香草醬",  @"加入焦糖醬", @"將牛奶打發倒入咖啡上層", @"完成了"];
+        _pageImages = @[@"espresso.png", @"vanila syrup.png", @"camerel sauce.png",@"pourfoam.png",@"Caramel Macchiato.png"];
+        
     }
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
