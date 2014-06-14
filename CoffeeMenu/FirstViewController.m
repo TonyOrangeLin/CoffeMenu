@@ -25,7 +25,11 @@
     _contacts = [[NSArray alloc] initWithObjects:
                  @"Latte"
                  , @"Mocha"
-                 ,@"Cappuccino"
+                 , @"Cappuccino"
+                 , @"Espresso Con Panna"
+                 , @"Espresso Macchiato"
+                 , @"Americano"
+                 , @"Caramel Macchiato"
                  , nil];
     
     self.collectionView.dataSource = self;
