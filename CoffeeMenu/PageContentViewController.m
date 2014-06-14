@@ -29,6 +29,8 @@
 
     self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
     self.titleLabel.text = self.titleText;
+    self.IntoFBButton.enabled = self.isfbEnable;
+    self.IntoFBButton.hidden=!(self.isfbEnable);
 
 }
 

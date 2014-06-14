@@ -11,7 +11,9 @@
 @interface PageContentViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UIButton *IntoFBButton;
 @property NSUInteger pageIndex;
 @property NSString *titleText;
 @property NSString *imageFile;
+@property BOOL isfbEnable;
 @end

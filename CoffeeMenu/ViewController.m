@@ -109,6 +109,14 @@
     pageContentViewController.imageFile = self.pageImages[index];
     pageContentViewController.titleText = self.pageTitles[index];
     pageContentViewController.pageIndex = index;
+    if(index == ([self.pageTitles count] - 1))
+    {
+        pageContentViewController.isfbEnable=true;
+    }
+    else
+    {
+        pageContentViewController.isfbEnable=false;
+    }
     
     return pageContentViewController;
 }
