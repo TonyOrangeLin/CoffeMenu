@@ -25,6 +25,7 @@
 		C82BB26C194B323700840E79 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82BB26B194B323700840E79 /* MapKit.framework */; };
 		C82BB270194B5FFF00840E79 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82BB26E194B5FFF00840E79 /* Main_iPhone.storyboard */; };
 		C82BB272194B60B900840E79 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82BB271194B60B900840E79 /* FacebookSDK.framework */; };
+		EA067536194C65D600B890E4 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */; };
 		EA763B631948303A001342D2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA763B621948303A001342D2 /* MapViewController.m */; };
 		EAA4FCE9194AFDDA002D0D6C /* camerel syrup.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA4FCE8194AFDD9002D0D6C /* camerel syrup.png */; };
 		EAA4FCED194C2435002D0D6C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAA4FCEC194C2435002D0D6C /* Settings.bundle */; };
@@ -72,6 +73,8 @@
 		C82BB26B194B323700840E79 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C82BB26F194B5FFF00840E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		C82BB271194B60B900840E79 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = CoffeeMenu/FacebookSDK.framework; sourceTree = "<group>"; };
+		EA067534194C65D600B890E4 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 		EA763B611948303A001342D2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		EA763B621948303A001342D2 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		EAA4FCE8194AFDD9002D0D6C /* camerel syrup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerel syrup.png"; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				EAA926811945909B008C93C6 /* DetailViewController.m */,
 				EA763B611948303A001342D2 /* MapViewController.h */,
 				EA763B621948303A001342D2 /* MapViewController.m */,
+				EA067534194C65D600B890E4 /* MKMapView+ZoomLevel.h */,
+				EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */,
 				C809C973194441F70027B54C /* Images.xcassets */,
 				C82BB26D194B4CAC00840E79 /* photo */,
 				C809C95C194441F70027B54C /* Supporting Files */,
@@ -327,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA92688194620B2008C93C6 /* ViewController.m in Sources */,
+				EA067536194C65D600B890E4 /* MKMapView+ZoomLevel.m in Sources */,
 				EAA926821945909B008C93C6 /* DetailViewController.m in Sources */,
 				C809C972194441F70027B54C /* SecondViewController.m in Sources */,
 				EA763B631948303A001342D2 /* MapViewController.m in Sources */,

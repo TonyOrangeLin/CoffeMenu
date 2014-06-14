@@ -248,23 +248,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <searchBar opaque="NO" contentMode="scaleToFill" fixedFrame="YES" text="" translatesAutoresizingMaskIntoConstraints="NO" id="lZj-km-H0u">
-                                <rect key="frame" x="0.0" y="23" width="320" height="44"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                                <connections>
-                                    <outlet property="delegate" destination="EhO-yX-IQL" id="RlC-j4-Avu"/>
-                                </connections>
-                            </searchBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-CR-Em9">
-                                <rect key="frame" x="0.0" y="67" width="320" height="450"/>
+                                <rect key="frame" x="0.0" y="55" width="320" height="421"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0q-GY-C3j">
+                                <rect key="frame" x="131" y="484" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mapButton:" destination="EhO-yX-IQL" eventType="touchUpInside" id="Abo-p3-ixP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="first" id="sJ3-yM-22o"/>
                     <connections>
                         <outlet property="ibMapView" destination="xDM-CR-Em9" id="Jff-mR-fap"/>
-                        <outlet property="ibSearchBar" destination="lZj-km-H0u" id="l6F-sq-gEs"/>
                         <outlet property="searchDisplayController" destination="tVO-hl-R7F" id="ITs-Lo-che"/>
                     </connections>
                 </viewController>
@@ -272,7 +274,6 @@
                 <searchDisplayController id="tVO-hl-R7F">
                     <connections>
                         <outlet property="delegate" destination="EhO-yX-IQL" id="Zj7-w6-TOV"/>
-                        <outlet property="searchBar" destination="lZj-km-H0u" id="mGv-Xv-el7"/>
                         <outlet property="searchContentsController" destination="EhO-yX-IQL" id="Pba-iK-8Gq"/>
                         <outlet property="searchResultsDataSource" destination="EhO-yX-IQL" id="X8r-Lv-gzK"/>
                         <outlet property="searchResultsDelegate" destination="EhO-yX-IQL" id="Kfg-Zu-qej"/>
