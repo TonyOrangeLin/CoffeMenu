@@ -25,6 +25,7 @@
 		C82BB26C194B323700840E79 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82BB26B194B323700840E79 /* MapKit.framework */; };
 		C82BB270194B5FFF00840E79 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C82BB26E194B5FFF00840E79 /* Main_iPhone.storyboard */; };
 		C82BB272194B60B900840E79 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82BB271194B60B900840E79 /* FacebookSDK.framework */; };
+		C8EDC82E194CB1FA00110732 /* SharePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EDC82D194CB1FA00110732 /* SharePhotoViewController.m */; };
 		EA067536194C65D600B890E4 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */; };
 		EA763B631948303A001342D2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA763B621948303A001342D2 /* MapViewController.m */; };
 		EAA4FCE9194AFDDA002D0D6C /* camerel syrup.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA4FCE8194AFDD9002D0D6C /* camerel syrup.png */; };
@@ -73,6 +74,8 @@
 		C82BB26B194B323700840E79 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C82BB26F194B5FFF00840E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		C82BB271194B60B900840E79 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = CoffeeMenu/FacebookSDK.framework; sourceTree = "<group>"; };
+		C8EDC82C194CB1FA00110732 /* SharePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharePhotoViewController.h; sourceTree = "<group>"; };
+		C8EDC82D194CB1FA00110732 /* SharePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharePhotoViewController.m; sourceTree = "<group>"; };
 		EA067534194C65D600B890E4 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 		EA763B611948303A001342D2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				EAA92687194620B2008C93C6 /* ViewController.m */,
 				EAA9268319461FD9008C93C6 /* PageContentViewController.h */,
 				EAA9268419461FD9008C93C6 /* PageContentViewController.m */,
+				C8EDC82C194CB1FA00110732 /* SharePhotoViewController.h */,
+				C8EDC82D194CB1FA00110732 /* SharePhotoViewController.m */,
 				C809C970194441F70027B54C /* SecondViewController.h */,
 				C809C971194441F70027B54C /* SecondViewController.m */,
 				EAA926801945909B008C93C6 /* DetailViewController.h */,
@@ -340,6 +345,7 @@
 				C809C96F194441F70027B54C /* FirstViewController.m in Sources */,
 				C809C962194441F70027B54C /* main.m in Sources */,
 				EAA9268519461FD9008C93C6 /* PageContentViewController.m in Sources */,
+				C8EDC82E194CB1FA00110732 /* SharePhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

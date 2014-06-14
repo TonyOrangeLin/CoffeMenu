@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class SecondViewController;
-
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) SecondViewController *viewController;
 
 @end

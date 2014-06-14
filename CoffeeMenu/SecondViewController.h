@@ -9,11 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
 
-@interface SecondViewController : UIViewController <FBViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface SecondViewController : UIViewController <FBViewControllerDelegate>
 
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
-
-- (IBAction)takePhoto:  (UIButton *)sender;
-- (IBAction)selectPhoto:(UIButton *)sender;
 
 @end

@@ -1,17 +1,18 @@
 //
-//  SecondViewController.m
+//  SharePhotoViewController.m
 //  CoffeeMenu
 //
-//  Created by 黃昱彰 on 2014/6/8.
+//  Created by 黃昱彰 on 2014/6/15.
 //  Copyright (c) 2014年 max005. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "SharePhotoViewController.h"
 
-@interface SecondViewController ()
+@interface SharePhotoViewController ()
+
 @end
 
-@implementation SecondViewController
+@implementation SharePhotoViewController
 
 - (void)viewDidLoad
 {
@@ -28,9 +29,9 @@
         
         [myAlertView show];
     }
-
-}
     
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -83,6 +84,4 @@
     
 }
 
-
 @end
-
