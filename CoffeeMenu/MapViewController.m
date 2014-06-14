@@ -133,7 +133,12 @@
         {
             //[self.searchDisplayController setActive:NO animated:YES];
             MKMapItem *item = results.mapItems[count];
+            MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+            annotation.coordinate = item.placemark.coordinate;
+            annotation.title=item.name;
+            annotation.subtitle = item.placemark.title;
             //[self.ibMapView addAnnotation:item.name];
+            [self.ibMapView addAnnotation:annotation];
             //[self.ibMapView selectAnnotation:item.placemark animated:YES];
             
             //[self.ibMapView setCenterCoordinate:item.placemark.location.coordinate animated:YES];
