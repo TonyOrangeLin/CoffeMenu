@@ -33,7 +33,6 @@
     self.titleLabel.text = self.titleText;
     self.IntoFBButton.enabled = self.isfbEnable;
     self.IntoFBButton.hidden=!(self.isfbEnable);
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,10 +43,21 @@
 
 - (IBAction)shareOGStoryWithShareDialog:(id)sender
 {
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                              message:@"Device has no camera"
+                                                             delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles: nil];
+        
+        [myAlertView show];
+    }else{
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
     [imagePicker setDelegate:self];
     [self presentViewController:imagePicker animated:YES completion:nil];
+    }
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
