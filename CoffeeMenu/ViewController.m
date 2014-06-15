@@ -14,6 +14,16 @@
 
 @implementation ViewController
 
+#define PREPARE_ESPRESSO NSLocalizedStringFromTable(@"PREPARE_ESPRESSO", @"ViewController",@"preare a cup of espresso")
+#define ADD_MILK_INTO_COFFEE NSLocalizedStringFromTable(@"ADD_MILK_INTO_COFFEE", @"ViewController",@"add milk")
+#define FINISH_PROCESS NSLocalizedStringFromTable(@"FINISH_PROCESS", @"ViewController",@"done")
+#define ADD_CHOCOLATE_SYRUP NSLocalizedStringFromTable(@"ADD_CHOCOLATE_SYRUP", @"ViewController",@"add chocolate")
+#define ADD_WHIPPEDCREAM_ON_COFFEE NSLocalizedStringFromTable(@"ADD_WHIPPEDCREAM_ON_COFFEE", @"ViewController",@"add cream")
+#define MAKE_MILK_FOAM NSLocalizedStringFromTable(@"MAKE_MILK_FOAM", @"ViewController",@"make milk foam")
+#define ADD_MILK_FOAM_ON_COFFEE NSLocalizedStringFromTable(@"POUR_MILK_FOAM_ON_COFFEE", @"ViewController",@"add milk foam")
+#define ADD_CARAMEL_SYRUP_ON_COFFEE NSLocalizedStringFromTable(@"ADD_CARAMEL_SYRUP_ON_COFFEE", @"ViewController",@"add caramel")
+#define ADD_WATER_TO_COFFEE NSLocalizedStringFromTable(@"ADD_WATER_TO_COFFEE", @"ViewController",@"add water")
+#define ADD_VANILA_SYRUP_TO_COFFEE NSLocalizedStringFromTable(@"ADD_VANILA_SYRUP_TO_COFFEE", @"ViewController",@"add vanila")
 - (void)viewDidLoad
 {
     //@"Latte"
@@ -24,47 +34,49 @@
     //, @"Americano"
     //, @"Caramel Macchiato"
     //
+    
     [super viewDidLoad];
 	// Create the data model
     _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
     _pageImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png"];
     if([_coffeeString isEqualToString:@"0"])
     {
-        _pageTitles = @[@"準備一份濃縮咖啡", @"將鮮奶加入濃縮咖啡", @"完成了"];
+        //_pageTitles = @[@"準備一份濃縮咖啡", @"將鮮奶加入濃縮咖啡", @"完成了"];
+        _pageTitles = @[PREPARE_ESPRESSO, ADD_MILK_INTO_COFFEE, FINISH_PROCESS];
         _pageImages = @[@"espresso.png", @"pour milk.png",@"Latte.png"];
     }
     else if([_coffeeString isEqualToString:@"1"])
     {
         
-         _pageTitles = @[@"準備一份濃縮咖啡", @"將鮮奶加入濃縮咖啡", @"加入巧克力糖漿",@"將發泡鮮奶油倒在濃縮咖啡上", @"完成了!!!"];
+         _pageTitles = @[PREPARE_ESPRESSO, ADD_MILK_INTO_COFFEE, ADD_CHOCOLATE_SYRUP,ADD_WHIPPEDCREAM_ON_COFFEE, FINISH_PROCESS];
         _pageImages = @[ @"espresso.png", @"pour milk.png",@"chocolatesyrup.png", @"WhippedCream.png",@"Mocha.png"];
     }
     else if([_coffeeString isEqualToString:@"2"])
     {
-         _pageTitles = @[@"準備一份濃縮咖啡", @"將鮮奶加入濃縮咖啡",@"將牛奶打發", @"倒入咖啡上層", @"完成了"];
-        _pageImages = @[@"espresso.png", @"pour milk.png", @"milk foam.png", @"pourfoam.png",@"Cappuccino.png"];
+         _pageTitles = @[PREPARE_ESPRESSO, ADD_MILK_INTO_COFFEE, ADD_MILK_FOAM_ON_COFFEE, FINISH_PROCESS];
+        _pageImages = @[@"espresso.png", @"pour milk.png", @"pourfoam.png",@"Cappuccino.png"];
     }
     
     else if([_coffeeString isEqualToString:@"3"])//espresso con panna
     {
-        _pageTitles = @[@"準備一份濃縮咖啡",@"將發泡鮮奶油倒在濃縮咖啡上",@"加入焦糖醬", @"完成了"];
+        _pageTitles = @[PREPARE_ESPRESSO,ADD_WHIPPEDCREAM_ON_COFFEE,ADD_CARAMEL_SYRUP_ON_COFFEE, FINISH_PROCESS];
         _pageImages = @[@"espresso.png", @"WhippedCream.png", @"camerel sauce.png",@"Espresso Con Panna.png"];
         
     }
     else if([_coffeeString isEqualToString:@"4"])//espresso macchiato
     {
-        _pageTitles = @[@"準備一份濃縮咖啡",  @"將牛奶打發倒入咖啡上層", @"完成了"];
+        _pageTitles = @[PREPARE_ESPRESSO, ADD_MILK_FOAM_ON_COFFEE, FINISH_PROCESS];
         _pageImages = @[@"espresso.png", @"pourfoam.png",@"Espresso Macchiato.png"];
         
     }
     else if([_coffeeString isEqualToString:@"5"])//Americano
     {
-        _pageTitles =@[@"準備一份濃縮咖啡", @"用水將杯子裝滿", @"完成了"];
+        _pageTitles =@[PREPARE_ESPRESSO, ADD_WATER_TO_COFFEE, FINISH_PROCESS];
         _pageImages = @[@"espresso.png", @"waterpour.png", @"Americano.png"];
     }
     else if([_coffeeString isEqualToString:@"6"])//caramel macchiato
     {
-        _pageTitles = @[@"準備一份濃縮咖啡",@"加入香草醬",  @"加入焦糖醬", @"將牛奶打發倒入咖啡上層", @"完成了"];
+        _pageTitles = @[PREPARE_ESPRESSO,ADD_VANILA_SYRUP_TO_COFFEE,  ADD_CARAMEL_SYRUP_ON_COFFEE, ADD_MILK_FOAM_ON_COFFEE, FINISH_PROCESS];
         _pageImages = @[@"espresso.png", @"vanila syrup.png", @"camerel sauce.png",@"pourfoam.png",@"Caramel Macchiato.png"];
         
     }

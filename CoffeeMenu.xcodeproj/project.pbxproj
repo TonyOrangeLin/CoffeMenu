@@ -26,6 +26,7 @@
 		C82BB272194B60B900840E79 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82BB271194B60B900840E79 /* FacebookSDK.framework */; };
 		C8EDC838194CC8F000110732 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EDC836194CC8F000110732 /* Main_iPhone.storyboard */; };
 		EA067536194C65D600B890E4 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */; };
+		EA067541194E1FFF00B890E4 /* ViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA067543194E1FFF00B890E4 /* ViewController.strings */; };
 		EA763B631948303A001342D2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA763B621948303A001342D2 /* MapViewController.m */; };
 		EAA4FCE9194AFDDA002D0D6C /* camerel syrup.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA4FCE8194AFDD9002D0D6C /* camerel syrup.png */; };
 		EAA4FCED194C2435002D0D6C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAA4FCEC194C2435002D0D6C /* Settings.bundle */; };
@@ -79,6 +80,9 @@
 		EA06753C194E137A00B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
 		EA06753D194E137A00B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		EA06753E194E137A00B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		EA067542194E1FFF00B890E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/ViewController.strings; sourceTree = "<group>"; };
+		EA067544194E200400B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ViewController.strings"; sourceTree = "<group>"; };
+		EA067545194E200500B890E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ViewController.strings; sourceTree = "<group>"; };
 		EA763B611948303A001342D2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		EA763B621948303A001342D2 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		EAA4FCE8194AFDD9002D0D6C /* camerel syrup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerel syrup.png"; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		C809C95B194441F70027B54C /* CoffeeMenu */ = {
 			isa = PBXGroup;
 			children = (
+				EA067543194E1FFF00B890E4 /* ViewController.strings */,
 				C809C964194441F70027B54C /* AppDelegate.h */,
 				C809C965194441F70027B54C /* AppDelegate.m */,
 				C8EDC836194CC8F000110732 /* Main_iPhone.storyboard */,
@@ -317,6 +322,7 @@
 				EAA92690194620C0008C93C6 /* page4.png in Resources */,
 				EAA9268E194620C0008C93C6 /* page2.png in Resources */,
 				EAA4FCE9194AFDDA002D0D6C /* camerel syrup.png in Resources */,
+				EA067541194E1FFF00B890E4 /* ViewController.strings in Resources */,
 				EAA9268F194620C0008C93C6 /* page3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +407,16 @@
 				EA06753B194E137A00B890E4 /* zh-Hant */,
 			);
 			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EA067543194E1FFF00B890E4 /* ViewController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA067542194E1FFF00B890E4 /* Base */,
+				EA067544194E200400B890E4 /* zh-Hant */,
+				EA067545194E200500B890E4 /* en */,
+			);
+			name = ViewController.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
