@@ -137,6 +137,7 @@
             annotation.coordinate = item.placemark.coordinate;
             annotation.title=item.name;
             annotation.subtitle = item.placemark.title;
+          
             //[self.ibMapView addAnnotation:item.name];
             [self.ibMapView addAnnotation:annotation];
             //[self.ibMapView selectAnnotation:item.placemark animated:YES];
