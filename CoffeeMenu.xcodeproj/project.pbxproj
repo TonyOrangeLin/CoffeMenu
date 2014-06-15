@@ -75,6 +75,10 @@
 		C8EDC837194CC8F000110732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		EA067534194C65D600B890E4 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
+		EA06753B194E137A00B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main_iPhone.strings"; sourceTree = "<group>"; };
+		EA06753C194E137A00B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
+		EA06753D194E137A00B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		EA06753E194E137A00B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		EA763B611948303A001342D2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		EA763B621948303A001342D2 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		EAA4FCE8194AFDD9002D0D6C /* camerel syrup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerel syrup.png"; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = C809C949194441F70027B54C;
 			productRefGroup = C809C953194441F70027B54C /* Products */;
@@ -366,6 +371,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C809C95F194441F70027B54C /* en */,
+				EA06753D194E137A00B890E4 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -374,6 +380,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C809C96B194441F70027B54C /* Base */,
+				EA06753C194E137A00B890E4 /* zh-Hant */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
@@ -382,6 +389,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C809C984194441F80027B54C /* en */,
+				EA06753E194E137A00B890E4 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -390,6 +398,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C8EDC837194CC8F000110732 /* Base */,
+				EA06753B194E137A00B890E4 /* zh-Hant */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
