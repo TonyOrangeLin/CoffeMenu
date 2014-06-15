@@ -44,14 +44,10 @@
 
 - (IBAction)shareOGStoryWithShareDialog:(id)sender
 {
-    
-     if([FBDialogs canPresentShareDialogWithPhotos]) {
-        NSLog(@"canPresent");
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
     [imagePicker setDelegate:self];
     [self presentViewController:imagePicker animated:YES completion:nil];
-    }
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {

@@ -4,11 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller - Menu-->
+        <!--Navigation Controller - CoffeeMenu-->
         <scene sceneID="ukS-Y5-rd9">
             <objects>
                 <navigationController definesPresentationContext="YES" id="yne-oS-n0w" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Menu" image="first" id="oNI-cp-yk0"/>
+                    <tabBarItem key="tabBarItem" title="CoffeeMenu" image="cafe" id="oNI-cp-yk0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pqe-9c-tUp">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -80,7 +80,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Menu" image="first" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="CoffeeMenu" image="cafe" id="u1e-5L-l1D"/>
                     <navigationItem key="navigationItem" id="JNJ-8S-SJB"/>
                     <connections>
                         <outlet property="collectionView" destination="fSb-H3-TlX" id="2UL-VZ-Jp0"/>
@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648" y="430"/>
+            <point key="canvasLocation" x="648" y="1110"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
@@ -137,7 +137,6 @@
                     <connections>
                         <segue destination="yne-oS-n0w" kind="relationship" relationship="viewControllers" id="Ekw-zl-S90"/>
                         <segue destination="EhO-yX-IQL" kind="relationship" relationship="viewControllers" id="61Q-vG-oqp"/>
-                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -236,7 +235,7 @@
             </objects>
             <point key="canvasLocation" x="1847" y="436"/>
         </scene>
-        <!--Map View Controller - Map-->
+        <!--Map View Controller - CoffeeMap-->
         <scene sceneID="pOV-vZ-QIT">
             <objects>
                 <viewController id="EhO-yX-IQL" customClass="MapViewController" sceneMemberID="viewController">
@@ -265,7 +264,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="first" id="sJ3-yM-22o"/>
+                    <tabBarItem key="tabBarItem" title="CoffeeMap" image="map" id="sJ3-yM-22o"/>
                     <connections>
                         <outlet property="ibMapView" destination="xDM-CR-Em9" id="Jff-mR-fap"/>
                         <outlet property="searchDisplayController" destination="tVO-hl-R7F" id="ITs-Lo-che"/>
@@ -281,12 +280,14 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="648" y="1116"/>
+            <point key="canvasLocation" x="648" y="430"/>
         </scene>
     </scenes>
     <resources>
+        <image name="cafe" width="64" height="64"/>
         <image name="facebook" width="325" height="325"/>
         <image name="first" width="30" height="30"/>
+        <image name="map" width="64" height="64"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
