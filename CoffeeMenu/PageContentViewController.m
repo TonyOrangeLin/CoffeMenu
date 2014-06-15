@@ -44,7 +44,8 @@
 
 - (IBAction)shareOGStoryWithShareDialog:(id)sender
 {
-    if([FBDialogs canPresentShareDialogWithPhotos]) {
+    
+     if([FBDialogs canPresentShareDialogWithPhotos]) {
         NSLog(@"canPresent");
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
@@ -56,10 +57,12 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     UIImage *img = [info objectForKey:UIImagePickerControllerOriginalImage];
     
+    /*
     FBPhotoParams *params = [[FBPhotoParams alloc] init];
     params.photos = @[img];
     
-    [FBDialogs presentShareDialogWithPhotoParams:params
+    
+     [FBDialogs presentShareDialogWithPhotoParams:params
                                      clientState:nil
                                          handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
                                              if (error) {
@@ -67,8 +70,44 @@
                                              } else {
                                                  NSLog(@"Success!");
                                              }
+                                             [self dismissViewControllerAnimated:YES completion:NULL];
                                          }];
-    
+     */
+    NSString *coffee =[self.imageFile substringToIndex:(self.imageFile.length - 4)];
+    NSString *text = [NSString stringWithFormat:@"I have brewed a cup of %@ with CoffeeMenu" , coffee];
+    [FBDialogs presentOSIntegratedShareDialogModallyFrom:picker
+                                             initialText:text
+                                               image:img
+                                                 url:nil
+                                                 handler:
+                                                    ^(FBOSIntegratedShareDialogResult result, NSError *error) {
+                                                     
+                                                     //  while complete, do this
+                                                        [self dismissViewControllerAnimated:YES completion:NULL];
+                                                     switch (result) {
+                                                             
+                                                         case FBOSIntegratedShareDialogResultSucceeded:
+                                                             
+                                                             NSLog(@"Share Success.");
+                                                             
+                                                             break;
+                                                             
+                                                         case FBOSIntegratedShareDialogResultCancelled:
+                                                             
+                                                             NSLog(@"Share Cancelled.");
+                                                             
+                                                             break;
+                                                             
+                                                         case FBOSIntegratedShareDialogResultError:
+                                                             
+                                                             NSLog(@"Share Error.");
+                                                             
+                                                             break;
+                                                             
+                                                     }
+                                                     NSLog(@"Share error : %@", error?error:@"OK");
+                                                 }];
 }
+
 
 @end
