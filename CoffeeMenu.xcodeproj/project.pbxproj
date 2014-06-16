@@ -24,7 +24,11 @@
 		C809C987194441F80027B54C /* CoffeeMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C809C986194441F80027B54C /* CoffeeMenuTests.m */; };
 		C82BB26C194B323700840E79 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82BB26B194B323700840E79 /* MapKit.framework */; };
 		C82BB272194B60B900840E79 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82BB271194B60B900840E79 /* FacebookSDK.framework */; };
+		C8DFE715194E92E9006DEEC2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DFE714194E92E9006DEEC2 /* CoreData.framework */; };
 		C8EDC838194CC8F000110732 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EDC836194CC8F000110732 /* Main_iPhone.storyboard */; };
+		C8FA51FA194DD36D00257043 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8FA51F8194DD36D00257043 /* Model.xcdatamodeld */; };
+		C8FA51FD194DD3D500257043 /* Coffee.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FA51FC194DD3D500257043 /* Coffee.m */; };
+		C8FA5200194DD41400257043 /* Coffee+record.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FA51FF194DD41400257043 /* Coffee+record.m */; };
 		EA067536194C65D600B890E4 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */; };
 		EA067541194E1FFF00B890E4 /* ViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA067543194E1FFF00B890E4 /* ViewController.strings */; };
 		EA763B631948303A001342D2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA763B621948303A001342D2 /* MapViewController.m */; };
@@ -73,7 +77,13 @@
 		C809C986194441F80027B54C /* CoffeeMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeMenuTests.m; sourceTree = "<group>"; };
 		C82BB26B194B323700840E79 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C82BB271194B60B900840E79 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = CoffeeMenu/FacebookSDK.framework; sourceTree = "<group>"; };
+		C8DFE714194E92E9006DEEC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C8EDC837194CC8F000110732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C8FA51F9194DD36D00257043 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C8FA51FB194DD3D500257043 /* Coffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coffee.h; sourceTree = "<group>"; };
+		C8FA51FC194DD3D500257043 /* Coffee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coffee.m; sourceTree = "<group>"; };
+		C8FA51FE194DD41400257043 /* Coffee+record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Coffee+record.h"; sourceTree = "<group>"; };
+		C8FA51FF194DD41400257043 /* Coffee+record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Coffee+record.m"; sourceTree = "<group>"; };
 		EA067534194C65D600B890E4 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 		EA06753B194E137A00B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main_iPhone.strings"; sourceTree = "<group>"; };
@@ -104,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8DFE715194E92E9006DEEC2 /* CoreData.framework in Frameworks */,
 				C809C958194441F70027B54C /* CoreGraphics.framework in Frameworks */,
 				C82BB272194B60B900840E79 /* FacebookSDK.framework in Frameworks */,
 				C82BB26C194B323700840E79 /* MapKit.framework in Frameworks */,
@@ -148,6 +159,7 @@
 		C809C954194441F70027B54C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8DFE714194E92E9006DEEC2 /* CoreData.framework */,
 				C82BB271194B60B900840E79 /* FacebookSDK.framework */,
 				C82BB26B194B323700840E79 /* MapKit.framework */,
 				C809C955194441F70027B54C /* Foundation.framework */,
@@ -174,6 +186,10 @@
 				EAA9268419461FD9008C93C6 /* PageContentViewController.m */,
 				C809C970194441F70027B54C /* SecondViewController.h */,
 				C809C971194441F70027B54C /* SecondViewController.m */,
+				C8FA51FB194DD3D500257043 /* Coffee.h */,
+				C8FA51FC194DD3D500257043 /* Coffee.m */,
+				C8FA51FE194DD41400257043 /* Coffee+record.h */,
+				C8FA51FF194DD41400257043 /* Coffee+record.m */,
 				EAA926801945909B008C93C6 /* DetailViewController.h */,
 				EAA926811945909B008C93C6 /* DetailViewController.m */,
 				EA763B611948303A001342D2 /* MapViewController.h */,
@@ -181,6 +197,7 @@
 				EA067534194C65D600B890E4 /* MKMapView+ZoomLevel.h */,
 				EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */,
 				C809C973194441F70027B54C /* Images.xcassets */,
+				C8FA51F8194DD36D00257043 /* Model.xcdatamodeld */,
 				C82BB26D194B4CAC00840E79 /* photo */,
 				C809C95C194441F70027B54C /* Supporting Files */,
 			);
@@ -349,6 +366,9 @@
 				EA763B631948303A001342D2 /* MapViewController.m in Sources */,
 				C809C966194441F70027B54C /* AppDelegate.m in Sources */,
 				C809C96F194441F70027B54C /* FirstViewController.m in Sources */,
+				C8FA51FD194DD3D500257043 /* Coffee.m in Sources */,
+				C8FA5200194DD41400257043 /* Coffee+record.m in Sources */,
+				C8FA51FA194DD36D00257043 /* Model.xcdatamodeld in Sources */,
 				C809C962194441F70027B54C /* main.m in Sources */,
 				EAA9268519461FD9008C93C6 /* PageContentViewController.m in Sources */,
 			);
@@ -601,6 +621,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C8FA51F8194DD36D00257043 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C8FA51F9194DD36D00257043 /* Model.xcdatamodel */,
+			);
+			currentVersion = C8FA51F9194DD36D00257043 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C809C94A194441F70027B54C /* Project object */;
 }
