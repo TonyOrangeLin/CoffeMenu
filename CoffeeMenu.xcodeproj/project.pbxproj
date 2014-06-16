@@ -15,7 +15,6 @@
 		C809C966194441F70027B54C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C809C965194441F70027B54C /* AppDelegate.m */; };
 		C809C96C194441F70027B54C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C809C96A194441F70027B54C /* Main_iPad.storyboard */; };
 		C809C96F194441F70027B54C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809C96E194441F70027B54C /* FirstViewController.m */; };
-		C809C972194441F70027B54C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C809C971194441F70027B54C /* SecondViewController.m */; };
 		C809C974194441F70027B54C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C809C973194441F70027B54C /* Images.xcassets */; };
 		C809C97B194441F70027B54C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C809C97A194441F70027B54C /* XCTest.framework */; };
 		C809C97C194441F70027B54C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C809C955194441F70027B54C /* Foundation.framework */; };
@@ -25,25 +24,19 @@
 		C82BB26C194B323700840E79 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82BB26B194B323700840E79 /* MapKit.framework */; };
 		C82BB272194B60B900840E79 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82BB271194B60B900840E79 /* FacebookSDK.framework */; };
 		C8DFE715194E92E9006DEEC2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DFE714194E92E9006DEEC2 /* CoreData.framework */; };
+		C8DFE76F194ED799006DEEC2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DFE76C194ED799006DEEC2 /* DetailViewController.m */; };
+		C8DFE770194ED799006DEEC2 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DFE76E194ED799006DEEC2 /* MasterViewController.m */; };
 		C8EDC838194CC8F000110732 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EDC836194CC8F000110732 /* Main_iPhone.storyboard */; };
 		C8FA51FA194DD36D00257043 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8FA51F8194DD36D00257043 /* Model.xcdatamodeld */; };
-		C8FA51FD194DD3D500257043 /* Coffee.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FA51FC194DD3D500257043 /* Coffee.m */; };
-		C8FA5200194DD41400257043 /* Coffee+record.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FA51FF194DD41400257043 /* Coffee+record.m */; };
 		EA067536194C65D600B890E4 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */; };
 		EA067541194E1FFF00B890E4 /* ViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA067543194E1FFF00B890E4 /* ViewController.strings */; };
 		EA067548194EACAC00B890E4 /* FirstViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA06754A194EACAC00B890E4 /* FirstViewController.strings */; };
 		EA067551194EBD3900B890E4 /* PageContentViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA067553194EBD3900B890E4 /* PageContentViewController.strings */; };
 		EA067558194EBE1100B890E4 /* coffeefb.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA06755A194EBE1100B890E4 /* coffeefb.strings */; };
 		EA763B631948303A001342D2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA763B621948303A001342D2 /* MapViewController.m */; };
-		EAA4FCE9194AFDDA002D0D6C /* camerel syrup.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA4FCE8194AFDD9002D0D6C /* camerel syrup.png */; };
 		EAA4FCED194C2435002D0D6C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAA4FCEC194C2435002D0D6C /* Settings.bundle */; };
-		EAA926821945909B008C93C6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA926811945909B008C93C6 /* DetailViewController.m */; };
 		EAA9268519461FD9008C93C6 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA9268419461FD9008C93C6 /* PageContentViewController.m */; };
 		EAA92688194620B2008C93C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA92687194620B2008C93C6 /* ViewController.m */; };
-		EAA9268D194620C0008C93C6 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA92689194620C0008C93C6 /* page1.png */; };
-		EAA9268E194620C0008C93C6 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA9268A194620C0008C93C6 /* page2.png */; };
-		EAA9268F194620C0008C93C6 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA9268B194620C0008C93C6 /* page3.png */; };
-		EAA92690194620C0008C93C6 /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA9268C194620C0008C93C6 /* page4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +63,6 @@
 		C809C96B194441F70027B54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		C809C96D194441F70027B54C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		C809C96E194441F70027B54C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		C809C970194441F70027B54C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		C809C971194441F70027B54C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		C809C973194441F70027B54C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C809C979194441F70027B54C /* CoffeeMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C809C97A194441F70027B54C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -81,12 +72,12 @@
 		C82BB26B194B323700840E79 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C82BB271194B60B900840E79 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = CoffeeMenu/FacebookSDK.framework; sourceTree = "<group>"; };
 		C8DFE714194E92E9006DEEC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C8DFE76B194ED799006DEEC2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C8DFE76C194ED799006DEEC2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C8DFE76D194ED799006DEEC2 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		C8DFE76E194ED799006DEEC2 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		C8EDC837194CC8F000110732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		C8FA51F9194DD36D00257043 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		C8FA51FB194DD3D500257043 /* Coffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coffee.h; sourceTree = "<group>"; };
-		C8FA51FC194DD3D500257043 /* Coffee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coffee.m; sourceTree = "<group>"; };
-		C8FA51FE194DD41400257043 /* Coffee+record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Coffee+record.h"; sourceTree = "<group>"; };
-		C8FA51FF194DD41400257043 /* Coffee+record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Coffee+record.m"; sourceTree = "<group>"; };
 		EA067534194C65D600B890E4 /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
 		EA06753B194E137A00B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main_iPhone.strings"; sourceTree = "<group>"; };
@@ -108,18 +99,11 @@
 		EA06755C194EBE1700B890E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/coffeefb.strings; sourceTree = "<group>"; };
 		EA763B611948303A001342D2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		EA763B621948303A001342D2 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		EAA4FCE8194AFDD9002D0D6C /* camerel syrup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerel syrup.png"; sourceTree = "<group>"; };
-		EAA4FCEC194C2435002D0D6C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		EAA926801945909B008C93C6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		EAA926811945909B008C93C6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		EAA4FCEC194C2435002D0D6C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
 		EAA9268319461FD9008C93C6 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		EAA9268419461FD9008C93C6 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		EAA92686194620B2008C93C6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EAA92687194620B2008C93C6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EAA92689194620C0008C93C6 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
-		EAA9268A194620C0008C93C6 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
-		EAA9268B194620C0008C93C6 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
-		EAA9268C194620C0008C93C6 /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +136,6 @@
 		C809C949194441F70027B54C = {
 			isa = PBXGroup;
 			children = (
-				EAA4FCEC194C2435002D0D6C /* Settings.bundle */,
 				C809C95B194441F70027B54C /* CoffeeMenu */,
 				C809C980194441F80027B54C /* CoffeeMenuTests */,
 				C809C954194441F70027B54C /* Frameworks */,
@@ -186,10 +169,13 @@
 		C809C95B194441F70027B54C /* CoffeeMenu */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
 				EA06755A194EBE1100B890E4 /* coffeefb.strings */,
 				EA067553194EBD3900B890E4 /* PageContentViewController.strings */,
 				EA06754A194EACAC00B890E4 /* FirstViewController.strings */,
 				EA067543194E1FFF00B890E4 /* ViewController.strings */,
+>>>>>>> FETCH_HEAD
 				C809C964194441F70027B54C /* AppDelegate.h */,
 				C809C965194441F70027B54C /* AppDelegate.m */,
 				C8EDC836194CC8F000110732 /* Main_iPhone.storyboard */,
@@ -200,6 +186,7 @@
 				EAA92687194620B2008C93C6 /* ViewController.m */,
 				EAA9268319461FD9008C93C6 /* PageContentViewController.h */,
 				EAA9268419461FD9008C93C6 /* PageContentViewController.m */,
+<<<<<<< HEAD
 				C809C970194441F70027B54C /* SecondViewController.h */,
 				C809C971194441F70027B54C /* SecondViewController.m */,
 				C8FA51FB194DD3D500257043 /* Coffee.h */,
@@ -208,13 +195,20 @@
 				EAA926801945909B008C93C6 /* DetailViewController.h */,
 				EAA926811945909B008C93C6 /* DetailViewController.m */,
 				C8FA51FF194DD41400257043 /* Coffee+record.m */,
+=======
+				C8DFE76D194ED799006DEEC2 /* MasterViewController.h */,
+				C8DFE76E194ED799006DEEC2 /* MasterViewController.m */,
+				C8DFE76B194ED799006DEEC2 /* DetailViewController.h */,
+				C8DFE76C194ED799006DEEC2 /* DetailViewController.m */,
+>>>>>>> FETCH_HEAD
 				EA763B611948303A001342D2 /* MapViewController.h */,
 				EA763B621948303A001342D2 /* MapViewController.m */,
 				EA067534194C65D600B890E4 /* MKMapView+ZoomLevel.h */,
 				EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */,
 				C809C973194441F70027B54C /* Images.xcassets */,
 				C8FA51F8194DD36D00257043 /* Model.xcdatamodeld */,
-				C82BB26D194B4CAC00840E79 /* photo */,
+				EAA4FCEC194C2435002D0D6C /* Settings.bundle */,
+				EA067543194E1FFF00B890E4 /* ViewController.strings */,
 				C809C95C194441F70027B54C /* Supporting Files */,
 			);
 			path = CoffeeMenu;
@@ -247,18 +241,6 @@
 				C809C983194441F80027B54C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C82BB26D194B4CAC00840E79 /* photo */ = {
-			isa = PBXGroup;
-			children = (
-				EAA4FCE8194AFDD9002D0D6C /* camerel syrup.png */,
-				EAA92689194620C0008C93C6 /* page1.png */,
-				EAA9268A194620C0008C93C6 /* page2.png */,
-				EAA9268B194620C0008C93C6 /* page3.png */,
-				EAA9268C194620C0008C93C6 /* page4.png */,
-			);
-			name = photo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,19 +329,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C809C96C194441F70027B54C /* Main_iPad.storyboard in Resources */,
-				EAA9268D194620C0008C93C6 /* page1.png in Resources */,
 				C8EDC838194CC8F000110732 /* Main_iPhone.storyboard in Resources */,
 				EAA4FCED194C2435002D0D6C /* Settings.bundle in Resources */,
 				C809C974194441F70027B54C /* Images.xcassets in Resources */,
 				C809C960194441F70027B54C /* InfoPlist.strings in Resources */,
+<<<<<<< HEAD
+=======
 				EA067551194EBD3900B890E4 /* PageContentViewController.strings in Resources */,
 				EA067548194EACAC00B890E4 /* FirstViewController.strings in Resources */,
 				EAA92690194620C0008C93C6 /* page4.png in Resources */,
 				EAA9268E194620C0008C93C6 /* page2.png in Resources */,
 				EA067558194EBE1100B890E4 /* coffeefb.strings in Resources */,
 				EAA4FCE9194AFDDA002D0D6C /* camerel syrup.png in Resources */,
+>>>>>>> FETCH_HEAD
 				EA067541194E1FFF00B890E4 /* ViewController.strings in Resources */,
-				EAA9268F194620C0008C93C6 /* page3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,13 +363,11 @@
 			files = (
 				EAA92688194620B2008C93C6 /* ViewController.m in Sources */,
 				EA067536194C65D600B890E4 /* MKMapView+ZoomLevel.m in Sources */,
-				EAA926821945909B008C93C6 /* DetailViewController.m in Sources */,
-				C809C972194441F70027B54C /* SecondViewController.m in Sources */,
+				C8DFE770194ED799006DEEC2 /* MasterViewController.m in Sources */,
+				C8DFE76F194ED799006DEEC2 /* DetailViewController.m in Sources */,
 				EA763B631948303A001342D2 /* MapViewController.m in Sources */,
 				C809C966194441F70027B54C /* AppDelegate.m in Sources */,
 				C809C96F194441F70027B54C /* FirstViewController.m in Sources */,
-				C8FA51FD194DD3D500257043 /* Coffee.m in Sources */,
-				C8FA5200194DD41400257043 /* Coffee+record.m in Sources */,
 				C8FA51FA194DD36D00257043 /* Model.xcdatamodeld in Sources */,
 				C809C962194441F70027B54C /* main.m in Sources */,
 				EAA9268519461FD9008C93C6 /* PageContentViewController.m in Sources */,
