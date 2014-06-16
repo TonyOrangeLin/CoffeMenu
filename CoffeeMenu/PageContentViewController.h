@@ -1,9 +1,9 @@
 //
 //  PageContentViewController.h
-//  PageViewDemo
+//  CoffeeMenu
 //
-//  Created by Simon on 24/11/13.
-//  Copyright (c) 2013 Appcoda. All rights reserved.
+//  Created by 黃昱彰 on 2014/6/8.
+//  Copyright (c) 2014年 max005. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

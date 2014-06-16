@@ -8,6 +8,7 @@
 #import <FacebookSDK/FacebookSDK.h>
 
 #import "AppDelegate.h"
+#import "MasterViewController.h"
 
 @implementation AppDelegate
 
@@ -23,8 +24,26 @@
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
     pageControl.backgroundColor = [UIColor whiteColor];
+
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+        splitViewController.delegate = (id)navigationController.topViewController;
+        
+        UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
+        MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;
+        controller.managedObjectContext = self.managedObjectContext;
+    } else {
+        UITabBarController *tbc = (UITabBarController *)self.window.rootViewController;
+        UINavigationController *navigationController = tbc.viewControllers[2];
+        //UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+        MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
+        controller.managedObjectContext = self.managedObjectContext;
+        //MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
+        //controller.managedObjectContext = self.managedObjectContext;
     
-    
+    }
+
     return YES;
 }
 
@@ -149,7 +168,7 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"CoreData" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -161,11 +180,16 @@
     if (_persistentStoreCoordinator != nil) {
         return _persistentStoreCoordinator;
     }
-    
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"CoreData.sqlite"];
+    //NSLog(@"test%@", [self managedObjectModel]);
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Model.sqlite"];
     
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    
+    
+    
+    
+    
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
