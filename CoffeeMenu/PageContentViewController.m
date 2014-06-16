@@ -35,6 +35,16 @@
     self.titleLabel.text = self.titleText;
     self.IntoFBButton.enabled = self.isfbEnable;
     self.IntoFBButton.hidden=!(self.isfbEnable);
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
+    {
+        
+        self.view.backgroundColor = [UIColor blackColor];
+    }
+    else
+    {
+        
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -82,7 +92,7 @@
                                          }];
      */
     NSString *coffee2 =[self.imageFile substringToIndex:(self.imageFile.length - 4)];
-    NSString *coffee = [[NSBundle mainBundle] localizedStringForKey:coffee2 value:coffee2 table:@"coffefb"];
+    NSString *coffee = [[NSBundle mainBundle] localizedStringForKey:coffee2 value:coffee2 table:@"coffeefb"];
     //NSString *text = [NSString stringWithFormat:@"I have brewed a cup of %@ with CoffeeMenu" , coffee];
     NSString *head = I_HAVE_BREWED_A_CUP_OF;
     NSString *tail = WITH_COFFEEMENU;

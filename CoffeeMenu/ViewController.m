@@ -34,7 +34,16 @@
     //, @"Americano"
     //, @"Caramel Macchiato"
     //
-    
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
+    {
+        
+        self.view.backgroundColor = [UIColor blackColor];
+    }
+    else
+    {
+        
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
     [super viewDidLoad];
 	// Create the data model
     _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];

@@ -16,6 +16,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
+    {
+        
+        self.view.backgroundColor = [UIColor blackColor];
+    }
+    else
+    {
+        
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
 	// Do any additional setup after loading the view, typically from a nib.
 }
     

@@ -28,6 +28,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
+    {
+        
+        self.view.backgroundColor = [UIColor blackColor];
+    }
+    else
+    {
+        
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
 	// Do any additional setup after loading the view, typically from a nib.
     _contacts = [[NSArray alloc] initWithObjects:
                  @"Latte"
@@ -49,6 +60,15 @@
                    ,CARAMEL_STRING
                    ,nil];
     
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
+    {
+        self.collectionView.backgroundColor = [UIColor blackColor];
+    }
+    else
+    {
+        
+         self.collectionView.backgroundColor= [UIColor whiteColor];
+    }
     self.collectionView.dataSource = self;
 }
 
@@ -69,6 +89,16 @@
     //將預先設計的cell樣本拿出來使用，
     //其Identifier為cell1的樣本
     UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell1" forIndexPath:indexPath];
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
+    {
+        cell.backgroundColor = [UIColor blackColor];
+    }
+    else
+    {
+        
+        cell.backgroundColor= [UIColor whiteColor];
+    }
+
     
     //透過viewWithTag:訊息，
     //找出Tag為100的view，
