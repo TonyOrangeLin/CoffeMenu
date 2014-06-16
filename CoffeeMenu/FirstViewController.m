@@ -12,12 +12,19 @@
 {
     //宣告一個存放連絡人的陣列變數，_contacts
     NSArray * _contacts;
+    NSArray * _coffeeName;
 }
 @end
 
 @implementation FirstViewController
 
-
+#define LATTE_STRING NSLocalizedStringFromTable(@"LATTE_STRING", @"FirstViewController",@"latte")
+#define MOCHA_STRING NSLocalizedStringFromTable(@"MOCHA_STRING", @"FirstViewController",@"Mocha")
+#define CAPPUCCINO_STRING NSLocalizedStringFromTable(@"CAPPUCCINO_STRING", @"FirstViewController",@"Cappuccino")
+#define ESPRESSO_CON_PANNA_STRING NSLocalizedStringFromTable(@"ESPRESSO_CON_PANNA_STRING", @"FirstViewController",@"Espresso Con Panna")
+#define ESPRESSO_MACCHIATO NSLocalizedStringFromTable(@"ESPRESSO_MACCHIATO", @"FirstViewController",@"Espresso Macchiato")
+#define AMERICANO_STRING NSLocalizedStringFromTable(@"AMERICANO_STRING", @"FirstViewController",@"Americano")
+#define CARAMEL_STRING NSLocalizedStringFromTable(@"CARAMEL_STRING", @"FirstViewController",@"Caramel Macchiato")
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,6 +38,16 @@
                  , @"Americano"
                  , @"Caramel Macchiato"
                  , nil];
+    
+    _coffeeName = [[NSArray alloc] initWithObjects:
+                   LATTE_STRING
+                   ,MOCHA_STRING
+                   ,CAPPUCCINO_STRING
+                   ,ESPRESSO_CON_PANNA_STRING
+                   ,ESPRESSO_MACCHIATO
+                   ,AMERICANO_STRING
+                   ,CARAMEL_STRING
+                   ,nil];
     
     self.collectionView.dataSource = self;
 }
@@ -59,7 +76,7 @@
     //並自_contacts陣列取出對應位置的連絡人姓名，
     //設定為label上的文字
     UILabel * label = (UILabel*)[cell viewWithTag:100];
-    [label setText:[_contacts objectAtIndex:[indexPath row]]];
+    [label setText:[_coffeeName objectAtIndex:[indexPath row]]];
     
     UIImageView *image = (UIImageView*)[cell viewWithTag:50];
     UIImage *img = [UIImage imageNamed:[_contacts objectAtIndex:[indexPath row]]];
