@@ -14,6 +14,8 @@
 
 @end
 
+#define I_HAVE_BREWED_A_CUP_OF NSLocalizedStringFromTable(@"I_HAVE_BREWED_A_CUP_OF", @"PageContentViewController",@"fbupload");
+#define WITH_COFFEEMENU NSLocalizedStringFromTable(@"WITH_COFFEEMENU", @"PageContentViewController", @"app name");
 @implementation PageContentViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -79,8 +81,14 @@
                                              [self dismissViewControllerAnimated:YES completion:NULL];
                                          }];
      */
-    NSString *coffee =[self.imageFile substringToIndex:(self.imageFile.length - 4)];
-    NSString *text = [NSString stringWithFormat:@"I have brewed a cup of %@ with CoffeeMenu" , coffee];
+    NSString *coffee2 =[self.imageFile substringToIndex:(self.imageFile.length - 4)];
+    NSString *coffee = [[NSBundle mainBundle] localizedStringForKey:coffee2 value:coffee2 table:@"coffefb"];
+    //NSString *text = [NSString stringWithFormat:@"I have brewed a cup of %@ with CoffeeMenu" , coffee];
+    NSString *head = I_HAVE_BREWED_A_CUP_OF;
+    NSString *tail = WITH_COFFEEMENU;
+    NSString *text = [NSString stringWithFormat:@"%@ %@ %@" , head , coffee , tail];
+    //NSString *text = [NSString stringWithFormat: I_HAVE_BREWED_A_CUP_OF+ @"%@" +  with [WITH_COFFEEMENU , coffee];
+
     [FBDialogs presentOSIntegratedShareDialogModallyFrom:picker
                                              initialText:text
                                                image:img

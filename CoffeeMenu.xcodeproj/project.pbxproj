@@ -32,6 +32,8 @@
 		EA067536194C65D600B890E4 /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA067535194C65D600B890E4 /* MKMapView+ZoomLevel.m */; };
 		EA067541194E1FFF00B890E4 /* ViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA067543194E1FFF00B890E4 /* ViewController.strings */; };
 		EA067548194EACAC00B890E4 /* FirstViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA06754A194EACAC00B890E4 /* FirstViewController.strings */; };
+		EA067551194EBD3900B890E4 /* PageContentViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA067553194EBD3900B890E4 /* PageContentViewController.strings */; };
+		EA067558194EBE1100B890E4 /* coffeefb.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA06755A194EBE1100B890E4 /* coffeefb.strings */; };
 		EA763B631948303A001342D2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA763B621948303A001342D2 /* MapViewController.m */; };
 		EAA4FCE9194AFDDA002D0D6C /* camerel syrup.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA4FCE8194AFDD9002D0D6C /* camerel syrup.png */; };
 		EAA4FCED194C2435002D0D6C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EAA4FCEC194C2435002D0D6C /* Settings.bundle */; };
@@ -98,6 +100,12 @@
 		EA06754B194EACB900B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/FirstViewController.strings"; sourceTree = "<group>"; };
 		EA06754C194EACB900B890E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/FirstViewController.strings; sourceTree = "<group>"; };
 		EA06754E194EAF0A00B890E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
+		EA067552194EBD3900B890E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/PageContentViewController.strings; sourceTree = "<group>"; };
+		EA067554194EBD3F00B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/PageContentViewController.strings"; sourceTree = "<group>"; };
+		EA067555194EBD3F00B890E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PageContentViewController.strings; sourceTree = "<group>"; };
+		EA067559194EBE1100B890E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/coffeefb.strings; sourceTree = "<group>"; };
+		EA06755B194EBE1600B890E4 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/coffeefb.strings"; sourceTree = "<group>"; };
+		EA06755C194EBE1700B890E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/coffeefb.strings; sourceTree = "<group>"; };
 		EA763B611948303A001342D2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		EA763B621948303A001342D2 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		EAA4FCE8194AFDD9002D0D6C /* camerel syrup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerel syrup.png"; sourceTree = "<group>"; };
@@ -178,6 +186,8 @@
 		C809C95B194441F70027B54C /* CoffeeMenu */ = {
 			isa = PBXGroup;
 			children = (
+				EA06755A194EBE1100B890E4 /* coffeefb.strings */,
+				EA067553194EBD3900B890E4 /* PageContentViewController.strings */,
 				EA06754A194EACAC00B890E4 /* FirstViewController.strings */,
 				EA067543194E1FFF00B890E4 /* ViewController.strings */,
 				C809C964194441F70027B54C /* AppDelegate.h */,
@@ -342,9 +352,11 @@
 				EAA4FCED194C2435002D0D6C /* Settings.bundle in Resources */,
 				C809C974194441F70027B54C /* Images.xcassets in Resources */,
 				C809C960194441F70027B54C /* InfoPlist.strings in Resources */,
+				EA067551194EBD3900B890E4 /* PageContentViewController.strings in Resources */,
 				EA067548194EACAC00B890E4 /* FirstViewController.strings in Resources */,
 				EAA92690194620C0008C93C6 /* page4.png in Resources */,
 				EAA9268E194620C0008C93C6 /* page2.png in Resources */,
+				EA067558194EBE1100B890E4 /* coffeefb.strings in Resources */,
 				EAA4FCE9194AFDDA002D0D6C /* camerel syrup.png in Resources */,
 				EA067541194E1FFF00B890E4 /* ViewController.strings in Resources */,
 				EAA9268F194620C0008C93C6 /* page3.png in Resources */,
@@ -455,6 +467,26 @@
 				EA06754C194EACB900B890E4 /* en */,
 			);
 			name = FirstViewController.strings;
+			sourceTree = "<group>";
+		};
+		EA067553194EBD3900B890E4 /* PageContentViewController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA067552194EBD3900B890E4 /* Base */,
+				EA067554194EBD3F00B890E4 /* zh-Hant */,
+				EA067555194EBD3F00B890E4 /* en */,
+			);
+			name = PageContentViewController.strings;
+			sourceTree = "<group>";
+		};
+		EA06755A194EBE1100B890E4 /* coffeefb.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA067559194EBE1100B890E4 /* Base */,
+				EA06755B194EBE1600B890E4 /* zh-Hant */,
+				EA06755C194EBE1700B890E4 /* en */,
+			);
+			name = coffeefb.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
