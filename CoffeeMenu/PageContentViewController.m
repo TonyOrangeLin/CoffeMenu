@@ -16,8 +16,36 @@
 
 #define I_HAVE_BREWED_A_CUP_OF NSLocalizedStringFromTable(@"I_HAVE_BREWED_A_CUP_OF", @"PageContentViewController",@"fbupload");
 #define WITH_COFFEEMENU NSLocalizedStringFromTable(@"WITH_COFFEEMENU", @"PageContentViewController", @"app name");
-@implementation PageContentViewController
 
+@implementation PageContentViewController
+- (void)setbackgroundcolor
+{
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
+    {
+        
+        self.view.backgroundColor = [UIColor brownColor];
+        
+            UIPageControl *pageControl = [UIPageControl appearance];
+            pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+            pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+            pageControl.backgroundColor = [UIColor brownColor];
+       
+            
+        
+       
+        //self.collectionView.backgroundColor = [UIColor blackColor];
+    }
+    else
+    {
+        
+        self.view.backgroundColor = [UIColor whiteColor];
+        UIPageControl *pageControl = [UIPageControl appearance];
+        pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+        pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+        pageControl.backgroundColor = [UIColor whiteColor];
+        //self.collectionView.backgroundColor = [UIColor whiteColor];
+    }
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,17 +63,11 @@
     self.titleLabel.text = self.titleText;
     self.IntoFBButton.enabled = self.isfbEnable;
     self.IntoFBButton.hidden=!(self.isfbEnable);
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
-    {
-        
-        self.view.backgroundColor = [UIColor blackColor];
-    }
-    else
-    {
-        
-        self.view.backgroundColor = [UIColor whiteColor];
-    }
-}
+    [[NSNotificationCenter defaultCenter] addObserverForName:NSUserDefaultsDidChangeNotification object:nil queue:nil usingBlock:^(NSNotification *note){
+        [self setbackgroundcolor];
+    }];
+     [self setbackgroundcolor];
+   }
 
 - (void)didReceiveMemoryWarning
 {

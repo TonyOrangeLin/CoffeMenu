@@ -25,20 +25,40 @@
 #define ESPRESSO_MACCHIATO NSLocalizedStringFromTable(@"ESPRESSO_MACCHIATO", @"FirstViewController",@"Espresso Macchiato")
 #define AMERICANO_STRING NSLocalizedStringFromTable(@"AMERICANO_STRING", @"FirstViewController",@"Americano")
 #define CARAMEL_STRING NSLocalizedStringFromTable(@"CARAMEL_STRING", @"FirstViewController",@"Caramel Macchiato")
-- (void)viewDidLoad
+
+- (void)setbackgroundcolor
 {
-    [super viewDidLoad];
-    
     if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
     {
         
-        self.view.backgroundColor = [UIColor blackColor];
+        self.view.backgroundColor = [UIColor brownColor];
+        self.collectionView.backgroundColor = [UIColor brownColor];
+        UIPageControl *pageControl = [UIPageControl appearance];
+        pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+        pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+        pageControl.backgroundColor = [UIColor brownColor];
     }
     else
     {
         
         self.view.backgroundColor = [UIColor whiteColor];
+        self.collectionView.backgroundColor = [UIColor whiteColor];
+        UIPageControl *pageControl = [UIPageControl appearance];
+        pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+        pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+        pageControl.backgroundColor = [UIColor whiteColor];
     }
+}
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+   
+     [self setbackgroundcolor];
+    [[NSNotificationCenter defaultCenter] addObserverForName:NSUserDefaultsDidChangeNotification object:nil queue:nil usingBlock:^(NSNotification *note){
+        [self setbackgroundcolor];
+    }];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     _contacts = [[NSArray alloc] initWithObjects:
                  @"Latte"
@@ -60,15 +80,7 @@
                    ,CARAMEL_STRING
                    ,nil];
     
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
-    {
-        self.collectionView.backgroundColor = [UIColor blackColor];
-    }
-    else
-    {
-        
-         self.collectionView.backgroundColor= [UIColor whiteColor];
-    }
+    
     self.collectionView.dataSource = self;
 }
 
@@ -89,15 +101,7 @@
     //將預先設計的cell樣本拿出來使用，
     //其Identifier為cell1的樣本
     UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell1" forIndexPath:indexPath];
-    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
-    {
-        cell.backgroundColor = [UIColor blackColor];
-    }
-    else
-    {
-        
-        cell.backgroundColor= [UIColor whiteColor];
-    }
+
 
     
     //透過viewWithTag:訊息，
