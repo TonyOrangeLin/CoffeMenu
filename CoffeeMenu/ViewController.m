@@ -24,6 +24,31 @@
 #define ADD_CARAMEL_SYRUP_ON_COFFEE NSLocalizedStringFromTable(@"ADD_CARAMEL_SYRUP_ON_COFFEE", @"ViewController",@"add caramel")
 #define ADD_WATER_TO_COFFEE NSLocalizedStringFromTable(@"ADD_WATER_TO_COFFEE", @"ViewController",@"add water")
 #define ADD_VANILA_SYRUP_TO_COFFEE NSLocalizedStringFromTable(@"ADD_VANILA_SYRUP_TO_COFFEE", @"ViewController",@"add vanila")
+- (void)setbackgroundcolor
+{
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
+    {
+        
+        self.view.backgroundColor = [UIColor brownColor];
+        UIPageControl *pageControl = [UIPageControl appearance];
+        pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+        pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+        pageControl.backgroundColor = [UIColor brownColor];
+        
+        //self.collectionView.backgroundColor = [UIColor blackColor];
+    }
+    else
+    {
+        
+        self.view.backgroundColor = [UIColor whiteColor];
+        UIPageControl *pageControl = [UIPageControl appearance];
+        pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+        pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+        pageControl.backgroundColor = [UIColor whiteColor];
+        //self.collectionView.backgroundColor = [UIColor whiteColor];
+    }
+}
+
 - (void)viewDidLoad
 {
     //@"Latte"
@@ -34,7 +59,10 @@
     //, @"Americano"
     //, @"Caramel Macchiato"
     //
-    
+    [self setbackgroundcolor];
+    [[NSNotificationCenter defaultCenter] addObserverForName:NSUserDefaultsDidChangeNotification object:nil queue:nil usingBlock:^(NSNotification *note){
+        [self setbackgroundcolor];
+    }];
     [super viewDidLoad];
 	// Create the data model
     _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];

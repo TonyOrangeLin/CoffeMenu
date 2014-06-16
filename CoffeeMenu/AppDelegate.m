@@ -19,6 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+<<<<<<< HEAD
     
     UIPageControl *pageControl = [UIPageControl appearance];
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
@@ -41,6 +42,25 @@
         controller.managedObjectContext = self.managedObjectContext;
         //MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
         //controller.managedObjectContext = self.managedObjectContext;
+=======
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
+    {
+        
+        UIPageControl *pageControl = [UIPageControl appearance];
+        pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+        pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+        pageControl.backgroundColor = [UIColor brownColor];
+    }
+    else
+    {
+        
+        UIPageControl *pageControl = [UIPageControl appearance];
+        pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+        pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+        pageControl.backgroundColor = [UIColor whiteColor];
+    }
+   
+>>>>>>> FETCH_HEAD
     
     }
 

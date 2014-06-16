@@ -14,8 +14,38 @@
 
 @end
 
-@implementation PageContentViewController
+#define I_HAVE_BREWED_A_CUP_OF NSLocalizedStringFromTable(@"I_HAVE_BREWED_A_CUP_OF", @"PageContentViewController",@"fbupload");
+#define WITH_COFFEEMENU NSLocalizedStringFromTable(@"WITH_COFFEEMENU", @"PageContentViewController", @"app name");
 
+@implementation PageContentViewController
+- (void)setbackgroundcolor
+{
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"Style_Enabled"])
+    {
+        
+        self.view.backgroundColor = [UIColor brownColor];
+        
+            UIPageControl *pageControl = [UIPageControl appearance];
+            pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+            pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+            pageControl.backgroundColor = [UIColor brownColor];
+       
+            
+        
+       
+        //self.collectionView.backgroundColor = [UIColor blackColor];
+    }
+    else
+    {
+        
+        self.view.backgroundColor = [UIColor whiteColor];
+        UIPageControl *pageControl = [UIPageControl appearance];
+        pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+        pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+        pageControl.backgroundColor = [UIColor whiteColor];
+        //self.collectionView.backgroundColor = [UIColor whiteColor];
+    }
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -33,7 +63,11 @@
     self.titleLabel.text = self.titleText;
     self.IntoFBButton.enabled = self.isfbEnable;
     self.IntoFBButton.hidden=!(self.isfbEnable);
-}
+    [[NSNotificationCenter defaultCenter] addObserverForName:NSUserDefaultsDidChangeNotification object:nil queue:nil usingBlock:^(NSNotification *note){
+        [self setbackgroundcolor];
+    }];
+     [self setbackgroundcolor];
+   }
 
 - (void)didReceiveMemoryWarning
 {
@@ -79,8 +113,14 @@
                                              [self dismissViewControllerAnimated:YES completion:NULL];
                                          }];
      */
-    NSString *coffee =[self.imageFile substringToIndex:(self.imageFile.length - 4)];
-    NSString *text = [NSString stringWithFormat:@"I have brewed a cup of %@ with CoffeeMenu" , coffee];
+    NSString *coffee2 =[self.imageFile substringToIndex:(self.imageFile.length - 4)];
+    NSString *coffee = [[NSBundle mainBundle] localizedStringForKey:coffee2 value:coffee2 table:@"coffeefb"];
+    //NSString *text = [NSString stringWithFormat:@"I have brewed a cup of %@ with CoffeeMenu" , coffee];
+    NSString *head = I_HAVE_BREWED_A_CUP_OF;
+    NSString *tail = WITH_COFFEEMENU;
+    NSString *text = [NSString stringWithFormat:@"%@ %@ %@" , head , coffee , tail];
+    //NSString *text = [NSString stringWithFormat: I_HAVE_BREWED_A_CUP_OF+ @"%@" +  with [WITH_COFFEEMENU , coffee];
+
     [FBDialogs presentOSIntegratedShareDialogModallyFrom:picker
                                              initialText:text
                                                image:img

@@ -36,11 +36,11 @@
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
-			<true/>
+			<false/>
 			<key>Key</key>
-			<string>enabled_preference</string>
+			<string>Style_Enabled</string>
 			<key>Title</key>
-			<string>Enabled</string>
+			<string>Special Style</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>
